@@ -109,6 +109,7 @@
 .baoming{
 	display: flex;
 	padding: 1% 0 1% 0;
+	align-items: center;
 }
 .pro-name{
 	flex: 1;
@@ -130,8 +131,8 @@
 	width: 50%;
 }
 .clibm{
-	width: 34px;
-    height: 34px;
+	width: 32px;
+    height: 32px;
     font-size: 2rem;
     line-height: 16px;
     padding: 5px;
