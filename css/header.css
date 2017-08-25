@@ -8,8 +8,8 @@
 }
 .zximg{
 	width:5.63%;
-	padding-left: 33px;
-	padding-right: 1rem;
+	padding-left: 5%;
+    padding-right: 1.6%;
 }
 .zxt{
 	font-size: 2rem;
@@ -50,5 +50,5 @@ nav ul li img{
 }
 nav ul li a span{
 	color: #000000;
-	font-size:1.8rem;
+	font-size:2rem;
 }

@@ -11,3 +11,21 @@ html, body, div, span, applet, object,button,input, iframe, h1, h2, h3, h4, h5, 
     text-decoration: none;
 }
 .clearfix{overflow:hidden;_zoom:1;}
+.c1{
+	color: #FF9C00;/*橙*/
+}
+.c2{
+	color: #02b2c9;/*蓝*/
+}
+.c3{
+	color: #f75553;/*有点红粉*/
+}
+.c4{
+	color: #74c65a;/*绿*/
+}
+.c5{
+	color: #8e93cd;/*小紫*/
+}
+.c6{
+	color: #FFC000;
+}
