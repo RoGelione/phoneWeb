@@ -348,6 +348,7 @@
 		<script type="text/javascript">
 			var nst = '';
 			var totop = document.getElementById('toTop');
+			showtop()
 			function showtop(){
 				nst = document.body.scrollTop;
 				if (nst > 500){
@@ -355,7 +356,7 @@
 				}else{
 				totop.style.display = 'none';
 				}
-				console.log(nst)
+//				console.log(nst)
 			}
 			document.addEventListener('scroll',showtop,false);
 			document.addEventListener('touchstart',showtop,false);
