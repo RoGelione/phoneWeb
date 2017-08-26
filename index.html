@@ -3,9 +3,16 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no, user-scalable=no"> 
+		<meta content="telephone=no" name="format-detection">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
@@ -318,23 +325,23 @@
 		</footer>
 		<div class="bottom-nav">
 			<div class="bn-link">
-				<div class="bn-linkimg"><img src="img/icon9.png" alt=""/></div><span>电话咨询</span>
+				<a href=""><div class="bn-linkimg"><img src="img/icon9.png" alt=""/></div><span>电话咨询</span></a>
 			</div>
 			<div class="bn-link">
-				<div class="bn-linkimg"><img src="img/icon10.png" alt="" /></div><span>电话咨询</span>
+				<a href=""><div class="bn-linkimg"><img src="img/icon10.png" alt="" /></div><span>电话咨询</span></a>
 			</div>
 			<div class="bn-link-home">
 				<img src="img/icon11.png"/>
 				<div class="p-home">
-					<div class="bn-linkimg2"><img src="img/icon14.png"/></div><span>返回首页</span>
+					<a href=""><div class="bn-linkimg2"><img src="img/icon14.png"/></div><span>返回首页</span></a>
 				</div>
 				
 			</div>
 			<div class="bn-link">
-				<div class="bn-linkimg"><img src="img/icon12.png" alt="" /></div><span>培训课程</span>
+				<a href=""><div class="bn-linkimg"><img src="img/icon12.png" alt="" /></div><span>培训课程</span></a>
 			</div>
 			<div class="bn-link">
-				<div class="bn-linkimg"><img src="img/icon13.png" alt="" /></div><span>报名地址</span>
+				<a href=""><div class="bn-linkimg"><img src="img/icon13.png" alt="" /></div><span>报名地址</span></a>
 			</div>
 		</div>
 		<div id="toTop" onclick="smoothscroll()">
@@ -359,9 +366,6 @@
 //				console.log(nst)
 			}
 			document.addEventListener('scroll',showtop,false);
-			document.addEventListener('touchstart',showtop,false);
-			document.addEventListener('touchend',showtop,false);
-			document.addEventListener('touchmove',showtop,false);
 			function smoothscroll(){
 			    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 			    if (currentScroll > 0) {
