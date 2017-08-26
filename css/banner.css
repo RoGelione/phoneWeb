@@ -252,7 +252,7 @@ footer{
     bottom: 0;
     padding: 0 5%;
     box-sizing: border-box;
-	display: none;
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	background: #FFC000;
@@ -302,7 +302,7 @@ footer{
     bottom: 60px;
     right: 5%;
     padding: 1.2rem .8rem;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	background: #000000;
 	opacity: .7;
