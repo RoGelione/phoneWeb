@@ -337,7 +337,34 @@
 				<div class="bn-linkimg"><img src="img/icon13.png" alt="" /></div><span>报名地址</span>
 			</div>
 		</div>
+		<div id="toTop" onclick="smoothscroll()">
+			<div class="totimg">
+				<img src="img/icon15.png" alt="" />
+			</div>
+			<span>顶部</span>
+		</div>
 		<script src="js/swiper-3.4.2.min.js"></script>
+		<script type="text/javascript">
+			var nst = '';
+			var totop = document.getElementById('toTop');
+			function showtop(){
+				nst = document.body.scrollTop;
+				if (nst > 500){
+				totop.style.display = 'flex';
+				}else{
+				totop.style.display = 'none';
+				}
+				console.log(nst)
+			}
+			document.addEventListener('scroll',showtop,false);
+			function smoothscroll(){
+			    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+			    if (currentScroll > 0) {
+			         window.requestAnimationFrame(smoothscroll);
+			         window.scrollTo (0,currentScroll - (currentScroll/5));
+			    }
+			};
+		</script>
 		<script>        
   			var mySwiper = new Swiper ('.swiper-container1', {//热门项目
   				loop: true,
