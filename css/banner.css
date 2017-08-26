@@ -292,3 +292,27 @@ footer{
 .p-home span{
 	font-size: 2rem;
 }
+/*返回顶部*/
+#toTop{
+	position: fixed;
+	z-index: 99;
+    bottom: 60px;
+    right: 5%;
+    padding: 1.2rem .8rem;
+	display: flex;
+	flex-direction: column;
+	background: #000000;
+	opacity: .7;
+	border-radius: 45px;
+	align-items: center;
+}
+#toTop .totimg{
+	width: 80%;
+}
+.totimg img{
+	width: 100%;
+}
+#toTop span{
+	color: #FFFFFF;
+	font-size: 2rem;
+}
