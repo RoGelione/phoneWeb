@@ -357,6 +357,9 @@
 				console.log(nst)
 			}
 			document.addEventListener('scroll',showtop,false);
+			document.addEventListener('touchstart',showtop,false);
+			document.addEventListener('touchend',showtop,false);
+			document.addEventListener('touchmove',showtop,false);
 			function smoothscroll(){
 			    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 			    if (currentScroll > 0) {
