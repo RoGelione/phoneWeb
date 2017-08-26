@@ -169,6 +169,7 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 1rem;
+	position: relative;
 }
 .bmxm span{
 	font-size: 1.8rem;
@@ -185,13 +186,15 @@
 .bmxm select{
 	position: absolute;
     width: 73%;
-    left: 61px;
+    height: 93%;
+    left: 43px;
     font-size: 1.6rem;
-    padding: 1.39rem 0 1.39rem .9rem;
+    /* padding: 1.39rem 0 1.39rem .9rem; */
     color: #808080;
     border: none;
     /* box-sizing: border-box; */
     border-radius: 5px;
+    background: #ffffff;
 }
 .zxbm>input[type="submit"]{
 	width: 100%;
