@@ -344,6 +344,7 @@
 			<span>顶部</span>
 		</div>
 		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			var nst = '';
 			var totop = document.getElementById('toTop');
@@ -391,8 +392,7 @@
   					document.getElementById('zx').remove();	
   				}
   			}
-  		</script>
-</body>
+  	</script>
 		<script type="text/javascript">
 			(function (doc, win) {  
 			    var docEl = doc.documentElement,  
@@ -411,6 +411,36 @@
 			    win.addEventListener(resizeEvt, recalc, false);  
 			    doc.addEventListener('DOMContentLoaded', recalc, false);  
 			})(document, window);  
+		</script>
+		<script type="text/javascript">
+			$(".demo-project ul li").on("click",function(){
+				var url = "";
+				var data = $(this).html();
+				alert(data)
+				ajaxGoto(url,data);
+			})
+			$(".sliimg").on("click",function(){
+				var url = "";
+				var data = $(this).html();
+				alert(data)
+				ajaxGoto(url,data);
+			})
+			function ajaxGoto(url,dataname){
+				$.ajax({
+					type:"post",
+					url:url,
+					data:{
+						dataname:dataname
+					},
+					dataType:JSON,
+					 success: function(){
+				   			window.location.href=''
+				  		},
+				  error: function(){
+				    alert('Ajax error!')
+				  }
+				});
+			}
 		</script>
 	</body>
 </html>
