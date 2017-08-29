@@ -16,8 +16,8 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
-		<link rel="stylesheet" type="text/css" href="css/header.css"/>
-		<link rel="stylesheet" type="text/css" href="css/banner.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header-and-foot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content.css"/>
 		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
 	</head>
 	<body>
@@ -276,10 +276,10 @@
 				<div class="demo-content-two">
 					<form action="" method="post" class="zxbm">
 						<div class="bmxm">
-							<span>姓名：</span><input type="text" name="" id="" value="" placeholder="请输入姓名"/>
+							<span>姓名：</span><input type="text" name="" id="" value="" placeholder="请输入您的姓名"/>
 						</div>
 						<div class="bmxm">
-							<span>电话：</span><input type="text" name="" id="" value="" placeholder="请输入手机号码"/>
+							<span>电话：</span><input type="text" name="" id="" value="" placeholder="请输入您的手机号码"/>
 						</div>
 						<div class="bmxm">
 							<span>咨询：</span>
@@ -352,28 +352,7 @@
 		</div>
 		<script src="js/swiper-3.4.2.min.js"></script>
 		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			var nst = '';
-			var totop = document.getElementById('toTop');
-			showtop()
-			function showtop(){
-				nst = document.body.scrollTop;
-				if (nst > 500){
-				totop.style.display = 'flex';
-				}else{
-				totop.style.display = 'none';
-				}
-//				console.log(nst)
-			}
-			document.addEventListener('scroll',showtop,false);
-			function smoothscroll(){
-			    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-			    if (currentScroll > 0) {
-			         window.requestAnimationFrame(smoothscroll);
-			         window.scrollTo (0,currentScroll - (currentScroll/5));
-			    }
-			};
-		</script>
+		<script src="js/toTop-and-fonts.js" type="text/javascript" charset="utf-8"></script>
 		<script>        
   			var mySwiper = new Swiper ('.swiper-container1', {//热门项目
   				loop: true,
@@ -399,32 +378,13 @@
   			}
   	</script>
 		<script type="text/javascript">
-			(function (doc, win) {  
-			    var docEl = doc.documentElement,  
-			        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',  
-			        recalc = function () {  
-			            var clientWidth = docEl.clientWidth;  
-			            if (!clientWidth) return;  
-			            if(clientWidth>=640){  
-			                docEl.style.fontSize = '10px';  
-			            }else{  
-			                docEl.style.fontSize = 10 * (clientWidth / 640) + 'px';  
-			            }  
-			        };  
-			  
-			    if (!doc.addEventListener) return;  
-			    win.addEventListener(resizeEvt, recalc, false);  
-			    doc.addEventListener('DOMContentLoaded', recalc, false);  
-			})(document, window);  
-		</script>
-		<script type="text/javascript">
-			$(".demo-project ul li").on("click",function(){
+			$(".demo-project ul").on("click","li",function(){
 				var url = "";
 				var data = $(this).html();
 				alert(data)
 				ajaxGoto(url,data);
 			})
-			$(".sliimg").on("click",function(){
+			$(".demo-content").on("click",".sliimg",function(){
 				var url = "";
 				var data = $(this).html();
 				alert(data)
