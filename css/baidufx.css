@@ -1,0 +1,25 @@
+.bds_tsina,.bds_sqq,.bds_weixin,.bds_tqq,.bds_tqq2{
+	float: left;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 6px 6px 0 0;
+    text-indent: -100em;
+    overflow: hidden;
+    background-size: cover;
+}
+.bds_tsina{
+	background-image: url(../img/icon19.jpg);
+}
+.bds_sqq{
+	background-image: url(../img/icon20.jpg);
+}
+.bds_weixin{
+	background-image: url(../img/icon21.jpg);
+}
+.bds_tqq{
+	background-image: url(../img/icon22.jpg);
+}
+.bds_tqq2{
+	background-image: url(../img/icon23.jpg);
+}

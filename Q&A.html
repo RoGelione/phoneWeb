@@ -276,7 +276,12 @@
 				alert(data)
 				ajaxGoto(url,data);
 			})
-			
+			$(".nfp-con").on("click","li",function(){
+				var url = "";
+				var data = $(this).html();
+				alert(data+"这是导航的ajax跳转")
+				ajaxGoto(url,data);
+			})
 			function ajaxGoto(url,dataname){
 				$.ajax({
 					type:"post",

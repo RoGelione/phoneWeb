@@ -35,7 +35,7 @@
 			</div>
 			<div class="content-title">
 				<span class="last-arr c1"> < </span>
-				<span class="title-text c3">关于威辰</span>	
+				<span class="title-text c3">学员风采</span>	
 				<div class="cont-nav">
 					<p><i></i><span></span></p>
 					<p><i></i><span></span></p>
@@ -43,44 +43,51 @@
 				</div>
 			</div>
 		</header>
-		<div class="gywc-nav">
-			<ul>
-				<li class="nc-on">关于威辰</li>
-				<li>培训优势</li>
-				<li>客户问答</li>
-				<li>优惠活动</li>
-			</ul>
-		</div>
-		<article>
+		<section>
 			<div class="gywc-article">
-				<p>厦门威宸餐饮管理有限公司旗下的福建威辰特色小吃培训中心，是目前福建省规模最大，创办最早的专业小吃培训机构，公司位于厦门市中心SM商业圈繁华路 段，公司集餐饮技术培训、特色小吃研究与技术开发、餐饮咨询与经营指导服务为一体，以倡导“传统与时尚，美味与健康”的绿色饮食文化，秉承“诚信、创新、 专业、务实”的经营理念，专心致力于饮食文化的传播与推广。本着继承、发展、弘扬民族传统小吃的理念，通过对学员进行实料操作的技术培训和成功创业的理论 培训，以及开店后的后续服务，力图使学员一次性创业成功</p>
-				<div class="sywc-showimg">
-					<ul>
-						<li><img src="img/gywc.jpg" alt="" /></li>
-						<li><img src="img/gywc2.jpg" alt="" /></li>
-						<li><img src="img/gywc.jpg" alt="" /></li>
-						<li><img src="img/gywc2.jpg" alt="" /></li>
-						<li><img src="img/gywc.jpg" alt="" /></li>
-						<li><img src="img/gywc2.jpg" alt="" /></li>
-					</ul>
-				</div>
-				<div class="dizhi">
-					<p>华东/厦门培训基地</p>
-					<p>地址：厦门市湖里区台湾街金中华商城7楼</p>
-					<p>0592-5532460</p>
-				</div>
-				<div class="dizhi">
-					<p>西北/西安培训基地</p>
-					<p>显示未央区凤城六路新界街区B座14楼</p>
-					<p>029-86101778</p>
-				</div>
-				<div class="dizhi">
-					<p>华中/武汉培训基地</p>
-					<p>武汉市武昌光谷鲁巷新域柠檬特区7-9楼</p>
-					<p>028-87584041</p>
+				<div class="fczs">
+					<div class="fczs-img">
+						<img src="img/gdban1.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban2.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban1.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban2.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban1.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban2.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban1.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban2.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban1.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban2.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban1.jpg"/>
+					</div>
+					<div class="fczs-img">
+						<img src="img/gdban2.jpg"/>
+					</div>
 				</div>
 			</div>
-		</article>
+			<div class="load-more">
+				<img src="img/loading.png" alt="" /><span>加载更多</span>
+			</div>
+		</section>
 		<section>
 			<div class="demo-head">
 				<div class="head-shadow"></div>
@@ -187,11 +194,17 @@
 				alert(data)
 				ajaxGoto(url,data);
 			})
-			$(".nfp-con").on("click","li",function(){
+			$(".fczs").on("click",".fczs-img",function(){
 				var url = "";
 				var data = $(this).html();
-				alert(data+"这是导航的ajax跳转")
+				alert(data)
 				ajaxGoto(url,data);
+			})
+			$(".load-more").on("click",function(){
+					$(this).find("img").css("display","block");
+					var url = "";
+					var data = "";
+					ajaxInThis(url,data);
 			})
 			function ajaxGoto(url,dataname){
 				$.ajax({
@@ -203,6 +216,26 @@
 					dataType:JSON,
 					 success: function(){
 				   			window.location.href=''
+				  		},
+				  error: function(){
+				    alert('Ajax error!')
+				  }
+				});
+			}
+			function ajaxInThis(url,dataname){
+				var fcCon = $(".fczs");
+				//fcCon.append("<div class='fczs-img'><img src='img/gdban1.jpg'/></div>")
+				//alert(fcCon.html())
+				$.ajax({
+					type:"post",
+					url:url,
+					data:{
+						dataname:dataname
+					},
+					dataType:JSON,
+					 success: function(data){
+				   			fcCon.append(data)//返回的如果是内容则用这个添加
+				   			fcCon.html(data)//返回的如果是网页则用这个添加，看情况替换那一块内容
 				  		},
 				  error: function(){
 				    alert('Ajax error!')

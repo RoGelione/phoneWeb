@@ -41,9 +41,8 @@
 	window.onload=function(){
 		$(".cont-nav").on("click",'span',function(){
 			ToShowNav();
-//			$("#gaimima").load("报名项目.html #gaimima",null,cpassword);/*ie用不了*/
 		});
-		function ToShowNav(){//修改密码可调用此函数
+		function ToShowNav(){
 							$('.overlay,.fixld-box').css("display","block");
 							$('.toClose').on('click','span',function(){
 							    $('.overlay,.fixld-box').css("display","none");
