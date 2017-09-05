@@ -49,6 +49,9 @@
 							});
 							}
 	}
+	$(".last-arr").on("click",function(){
+			location.href=history.go(-1);
+	})
 	/*ajax加载*/
 function ajaxGoto(url,dataname){
 				$.ajax({

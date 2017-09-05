@@ -98,11 +98,14 @@
 .pro-name>span{
 	font-size: 2rem;
 	text-overflow: ellipsis;
+	white-space: nowrap;
+    overflow: hidden;
 	line-height: 20px;
 }
 .pro-name p{
 	font-size: 1.7rem;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 .pro-name img{
@@ -149,8 +152,8 @@
 }
 .bmxm input[type='text']{
 	flex: 1;
-	font-size: 1.6rem;
-	padding: 1.5rem 0 1.5rem .9rem;
+	font-size: 2.4rem;
+	padding: 1rem 0 1rem .9rem;
 	color: #808080;
 	border:1px solid #D0D0D0;
 	box-sizing: border-box;
@@ -160,9 +163,9 @@
 	position: absolute;
     width: 73%;
     height: 93%;
-    left: 3.2rem;
+    left: 4rem;
     top: 1px;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     /* padding: 1.39rem 0 1.39rem .9rem; */
     color: #808080;
     border: none;
@@ -193,11 +196,12 @@ footer{
 	margin-bottom: 1rem;
 }
 .for-link a{
-	color: #FFC000;
+	color: #ffa800;
+	font-size:2.2rem ;
 	padding: 0 1rem;
 }
 .copyright span{
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 	color: #515151;
 }
 /*fixed*/
@@ -290,16 +294,16 @@ footer{
 	border-bottom: 1px solid #d3d3d3;
 }
 .last-arr{
-	font-size: 5rem;
+	font-size: 6rem;
     line-height: 2rem;
 	font-weight: 600;
 }
 .title-text{
-	font-size: 3rem;
+	font-size: 4rem;
 }
 .cont-nav{
 	display: flex;
-	height: 2rem;
+	height: 2.8rem;
 	flex-direction: column;
 	justify-content: space-around;
 }
@@ -316,7 +320,7 @@ footer{
     margin-right: .1rem;
 }
 .cont-nav p span{
-	width: 21px;
+	width: 25px;
     height: 3px;
     border-radius: 25%;
     background: #FFC000;
@@ -327,13 +331,13 @@ footer{
 }
 .gywc-nav ul{
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-around;	
 }
 .gywc-nav ul li{
 	padding: .3rem 1rem;
 	border: 1px solid #d3d3d3;
 	color:#808080;
-	font-size: 1.5rem;
+	font-size: 2.4rem;
 	border-radius: 15px;
 }
 .gywc-article{
@@ -341,7 +345,7 @@ footer{
 }
 .gywc-article>p{
 	color: #808080;
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 	line-height: 2rem;
 	margin-bottom: .8rem;
 }
@@ -363,8 +367,8 @@ footer{
 	font-weight: 700;
 }
 .dizhi p{
-	font-size: 1.8rem;
-	line-height: 2.2rem;
+	font-size: 2.2rem;
+	line-height: 2.4rem;
 	color: #808080;
 }
 /*客户问答*/
@@ -394,16 +398,16 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: .2rem;
-	font-size: 15px;
+	font-size: 2rem;
 }
-.q-colum p {
-	font-size: 18px;
+.q-spe p {
+	font-size: 2.4rem;
 }
 .a-spe p,.q-colum p{
 	font-size: 18px ;
 }
 .a-time{
-	font-size: 15px;
+	font-size: 2rem;
 	padding-bottom: .2rem;
 }
 .fye{
@@ -433,8 +437,8 @@ footer{
 }
 .bmxm textarea{
 	flex: 1;
-    font-size: 1.6rem;
-    min-height: 6.4rem;
+    font-size: 2.4rem;
+    min-height: 8.4rem;
     padding: .5rem 0.9rem .5rem .9rem;
     color: #808080;
     border: 1px solid #D0D0D0;
@@ -452,11 +456,14 @@ footer{
 	flex: 1;
 }
 .add-spe p{
-	font-size: 2rem;
+	font-size: 2.4rem;
 	color: #515151;
 }
+.add-spe strong{
+	font-size: 2.4rem;
+}
 .add-name{
-	font-size: 2rem;
+	font-size: 2.4rem;
 }
 .lxwmimg img,.add-spe img{
 	width: 100%;
@@ -509,6 +516,7 @@ footer{
 	border-radius: 8px;
 	box-sizing: border-box;
 	background: #fff;
+	font-size: 2rem;
 }
 .intro-advan p{
 	color: #515151;
@@ -522,13 +530,13 @@ footer{
 }
 .yhhd span {
 	width: 3.5rem;
-    font-size: 1.8rem;
+    font-size:2rem;
     text-align: end;
 }
 .yhhd input[type='text'] {
     flex: 1;
-    font-size: 1.6rem;
-    padding: 1.5rem 0 1.5rem .9rem;
+    font-size: 2.2rem;
+    padding: 1rem 0 1rem .9rem;
     color: #808080;
     border: 1px solid #D0D0D0;
     box-sizing: border-box;
@@ -536,12 +544,11 @@ footer{
     border-bottom-left-radius: 5px;
 }
 .getcode{
-	width: 8.5rem;
 	text-align: center;
 	color: #FFFFFF;
 	background:#818181;
-    font-size: 1.6rem;
-    padding: 1.5rem 0 1.5rem .9rem;
+    font-size: 2.2rem;
+    padding: 1rem 0.8rem 1rem .8rem;
     box-sizing: border-box;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -576,7 +583,7 @@ footer{
 	width: 16px;
 }
 .load-more span{
-	font-size: 1.6rem;
+	font-size: 2.4rem;
 	color: #515151;
 }
 /*培训*/
@@ -588,7 +595,7 @@ footer{
 	padding: 0 2%;
 }
 .peixun h3{
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 .peixun p{
 	margin: .5rem 0;
@@ -628,13 +635,16 @@ footer{
 	align-items: center;
 }
 .px-title{
-	padding: .5rem;
-	font-size: 2.3rem;
+	padding: 1rem;
+	font-size: 2.8rem;
 }
 .px-conspe{
 	flex: 1;
 	padding: .5rem;
 	border-left: 1px solid #d3d3d3;
+}
+.px-conspe p{
+	font-size: 2.4rem;
 }
 .px-conspe span{
 	color: #FF9C00;
@@ -661,11 +671,11 @@ footer{
 	border-bottom: 1px dashed #d3d3d3;
 }
 .pro-detwo .pdtle{
-	font-size: 2.5rem;
+	font-size: 3rem;
 	margin-bottom: 1rem;
 }
 .pro-detwo p{
-	font-size: 1.6rem;
+	font-size: 2.4rem;
 	color: #515151;
 }
 .pro-detwo img{
@@ -677,7 +687,7 @@ footer{
 }
 .all-intro p{
 	margin-top: 1rem;
-	font-size: 1.6rem;
+	font-size: 2.4rem;
 	color: #515151;
 	text-indent: 2rem;
 	line-height: 2rem;
@@ -687,7 +697,7 @@ footer{
 	border-top: 1px solid #d3d3d3;
 }
 .les-anpai p{
-	font-size: 1.6rem;
+	font-size: 2.4rem;
 }
 .les-anpai p span{
 	font-weight: 700;
