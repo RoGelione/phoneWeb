@@ -49,3 +49,20 @@
 							});
 							}
 	}
+	/*ajax加载*/
+function ajaxGoto(url,dataname){
+				$.ajax({
+					type:"post",
+					url:url,
+					data:{
+						dataname:dataname
+					},
+					dataType:JSON,
+					 success: function(){
+				   			window.location.href=''
+				  		},
+				  error: function(){
+				    alert('Ajax error!')
+				  }
+				});
+			}

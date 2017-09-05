@@ -448,22 +448,7 @@
 				alert(data)
 				ajaxGoto(url,data);
 			})
-			function ajaxGoto(url,dataname){
-				$.ajax({
-					type:"post",
-					url:url,
-					data:{
-						dataname:dataname
-					},
-					dataType:JSON,
-					 success: function(){
-				   			window.location.href=''
-				  		},
-				  error: function(){
-				    alert('Ajax error!')
-				  }
-				});
-			}
+			
 			function ajaxInThis(url,dataname){
 				var fcCon = $(".fczs");
 				//fcCon.append("<div class='fczs-img'><img src='img/gdban1.jpg'/></div>")

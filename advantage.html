@@ -95,7 +95,7 @@
 					<div class="advans b8">
 						<h5>国家级培训机构</h5>
 						<div class="intro-advan">
-							<p>福建威辰由省劳动部门审批备案，是新型饮食职业技能培训正规机构。旗下有鲜果奶奶，杯多芬，香丫蛋坊等多个商标品牌。学成后可申办国家职业资格证，证书全国通用，出国有效！</p>
+							<p>福建威辰由省劳动部门审批备案，是新型饮食职业技能培训正规机构。旗下有鲜果奶奶，杯多芬，香丫蛋坊等多个商标品牌。学成后可申办国家职业资格证，证书全国通用，出国有效！福建威辰由省劳动部门审批备案，是新型饮食职业技能培训正规机构。旗下有鲜果奶奶，杯多芬，香丫蛋坊等多个商标品牌。学成后可申办国家职业资格证，证书全国通用，出国有效！</p>
 						</div>
 					</div>
 				</div>
@@ -202,6 +202,16 @@
 		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/toTop-and-fonts.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$(function(){
+				$(".intro-advan p").each(function(){
+					var maxwidth=125;
+					if($(this).text().length>maxwidth){
+					$(this).text($(this).text().substring(0,maxwidth));
+					$(this).html($(this).html()+"...");
+					}
+				})
+				
+			});
 			$(".gywc-nav ul").on("click","li",function(){
 				var url = "";
 				var data = $(this).html();
@@ -214,22 +224,7 @@
 				alert(data+"这是导航的ajax跳转")
 				ajaxGoto(url,data);
 			})
-			function ajaxGoto(url,dataname){
-				$.ajax({
-					type:"post",
-					url:url,
-					data:{
-						dataname:dataname
-					},
-					dataType:JSON,
-					 success: function(){
-				   			window.location.href=''
-				  		},
-				  error: function(){
-				    alert('Ajax error!')
-				  }
-				});
-			}
+			
 		</script>
 	</body>
 </html>

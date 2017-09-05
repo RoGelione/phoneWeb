@@ -536,7 +536,8 @@ footer{
     border-bottom-left-radius: 5px;
 }
 .getcode{
-	width: 6.5rem;
+	width: 8.5rem;
+	text-align: center;
 	color: #FFFFFF;
 	background:#818181;
     font-size: 1.6rem;

@@ -250,22 +250,7 @@
 				alert(data+"这是导航的ajax跳转")
 				ajaxGoto(url,data);
 			})
-			function ajaxGoto(url,dataname){
-				$ .ajax({
-					type:"post",
-					url:url,
-					data:{
-						dataname:dataname
-					},
-					dataType:JSON,
-					 success: function(){
-				   			window.location.href=''
-				  		},
-				  error: function(){
-				    alert('Ajax error!')
-				  }
-				});
-			}
+			
 		</script>
 	</body>
 </html>
