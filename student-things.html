@@ -238,17 +238,8 @@
 		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/toTop-and-fonts.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(".gywc-nav ul").on("click","li",function(){
-				var url = "";
-				var data = $(this).html();
-				alert(data)
-				ajaxGoto(url,data);
-			})
 			$(".fczs").on("click",".fczs-img",function(){
-				var url = "";
-				var data = $(this).html();
-				alert(data+"这是导航的ajax跳转")
-				ajaxGoto(url,data);
+				window.location.href='the-show.html'
 			})
 			
 		</script>

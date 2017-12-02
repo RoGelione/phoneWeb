@@ -52,19 +52,49 @@
 		<div class="nfp-con w98">
 			<ul class="proli">
 				<li class="nc-on">全部</li>
-				<li>福建特色</li>
-				<li>早餐早点</li>
-				<li>休闲饮品</li>
-				<li>中餐快餐</li>
-				<li>西餐烘焙</li>
-				<li>夜宵烧烤</li>
-				<li>全天经营</li>
+				<li data-val ='fujian'>福建特色</li>
+				<li data-val ='zaocan'>早餐早点</li>
+				<li data-val ='xiuxian'>休闲饮品</li>
+				<li data-val ='zhongcan'>中餐快餐</li>
+				<li data-val ='xican'>西餐烘焙</li>
+				<li data-val ='yexiao'>夜宵烧烤</li>
+				<li data-val ='quantian'>全天经营</li>
 			</ul>
 		</div>
 		<article>
 			<div class="demo-project">
 				<ul>
 					<li>
+						<img src="img/gdban1.jpg" alt="" class="jsimg"/>
+						<div class="baoming">
+							<div class="pro-name">
+								<span class="jsspan">闽南卤味培训</span>
+								<p>热门指数&nbsp;:&nbsp;<img src="img/icon4.png"/></p>
+							</div>
+							<div class="clibm">在线报名</div>
+						</div>
+					</li>
+					<li>
+						<img src="img/gdban1.jpg" alt="" class="jsimg"/>
+						<div class="baoming">
+							<div class="pro-name">
+								<span class="jsspan">闽南卤味培训</span>
+								<p>热门指数&nbsp;:&nbsp;<img src="img/icon4.png"/></p>
+							</div>
+							<div class="clibm">在线报名</div>
+						</div>
+					</li>
+					<li>
+						<img src="img/gdban1.jpg" alt="" class="jsimg" />
+						<div class="baoming">
+							<div class="pro-name">
+								<span class="jsspan">闽南卤味培训</span>
+								<p>热门指数&nbsp;:&nbsp;<img src="img/icon4.png"/></p>
+							</div>
+							<div class="clibm">在线报名</div>
+						</div>
+					</li>
+					<!--<li>
 						<img src="img/gdban1.jpg" alt="" />
 						<div class="baoming">
 							<div class="pro-name">
@@ -93,37 +123,7 @@
 							</div>
 							<div class="clibm">在线报名</div>
 						</div>
-					</li>
-					<li>
-						<img src="img/gdban1.jpg" alt="" />
-						<div class="baoming">
-							<div class="pro-name">
-								<span>闽南卤味培训</span>
-								<p>热门指数&nbsp;:&nbsp;<img src="img/icon4.png"/></p>
-							</div>
-							<div class="clibm">在线报名</div>
-						</div>
-					</li>
-					<li>
-						<img src="img/gdban1.jpg" alt="" />
-						<div class="baoming">
-							<div class="pro-name">
-								<span>闽南卤味培训</span>
-								<p>热门指数&nbsp;:&nbsp;<img src="img/icon4.png"/></p>
-							</div>
-							<div class="clibm">在线报名</div>
-						</div>
-					</li>
-					<li>
-						<img src="img/gdban1.jpg" alt="" />
-						<div class="baoming">
-							<div class="pro-name">
-								<span>闽南卤味培训</span>
-								<p>热门指数&nbsp;:&nbsp;<img src="img/icon4.png"/></p>
-							</div>
-							<div class="clibm">在线报名</div>
-						</div>
-					</li>
+					</li>-->
 				</ul>
 			</div>
 		</article>
@@ -228,17 +228,10 @@
 		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/toTop-and-fonts.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(".gywc-nav ul").on("click","li",function(){
-				var url = "";
-				var data = $(this).html();
-				alert(data)
-				ajaxGoto(url,data);
-			})
 			$(".nfp-con").on("click","li",function(){
-				var url = "";
-				var data = $(this).html();
-				alert(data+"这是导航的ajax跳转")
-				ajaxGoto(url,data);
+				var name  = $(this).attr('data-val');
+//				console.log(name)
+				ajaxGoto(name);
 			})
 			
 		</script>

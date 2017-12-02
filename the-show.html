@@ -188,44 +188,36 @@
 		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/toTop-and-fonts.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(".gywc-nav ul").on("click","li",function(){
-				var url = "";
-				var data = $(this).html();
-				alert(data)
-				ajaxGoto(url,data);
-			})
 			$(".fczs").on("click",".fczs-img",function(){
-				var url = "";
-				var data = $(this).html();
-				alert(data)
-				ajaxGoto(url,data);
+				window.location.href='student-things.html'
 			})
 			$(".load-more").on("click",function(){
 					$(this).find("img").css("display","block");
 					var url = "";
 					var data = "";
 					ajaxInThis(url,data);
+					
 			})
 			
 			function ajaxInThis(url,dataname){
 				var fcCon = $(".fczs");
-				//fcCon.append("<div class='fczs-img'><img src='img/gdban1.jpg'/></div>")
+				fcCon.append("<div class='fczs-img'><img src='img/gdban1.jpg'/></div>")
 				//alert(fcCon.html())
-				$.ajax({
-					type:"post",
-					url:url,
-					data:{
-						dataname:dataname
-					},
-					dataType:JSON,
-					 success: function(data){
-				   			fcCon.append(data)//返回的如果是内容则用这个添加
-				   			fcCon.html(data)//返回的如果是网页则用这个添加，看情况替换那一块内容
-				  		},
-				  error: function(){
-				    alert('Ajax error!')
-				  }
-				});
+//				$.ajax({
+//					type:"post",
+//					url:url,
+//					data:{
+//						dataname:dataname
+//					},
+//					dataType:JSON,
+//					 success: function(data){
+//				   			fcCon.append(data)//返回的如果是内容则用这个添加
+//				   			fcCon.html(data)//返回的如果是网页则用这个添加，看情况替换那一块内容
+//				  		},
+//				  error: function(){
+//				    alert('Ajax error!')
+//				  }
+//				});
 			}
 		</script>
 	</body>
