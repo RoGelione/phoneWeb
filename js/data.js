@@ -1,0 +1,102 @@
+{
+	"fujian":[
+	{
+		"img":"img/gdban1.jpg",
+		"name":"粿条"
+	},
+	{
+		"img":"img/gdban2.jpg",
+		"name":"拌面"
+	},
+	{
+		"img":"img/gdban1.jpg",
+		"name":"扁食"
+	}
+],
+	"zaocan":[
+	{
+		"img":"img/gdban2.jpg",
+		"name":"粿条1"
+	},
+	{
+		"img":"img/gdban1.jpg",
+		"name":"拌面1"
+	},
+	{
+		"img":"img/gdban2.jpg",
+		"name":"扁食1"
+	}
+],
+	"xiuxian":[
+	{
+		"img":"img/gdban1.jpg",
+		"name":"粿条2"
+	},
+	{
+		"img":"img/gdban1.jpg",
+		"name":"拌面2"
+	},
+	{
+		"img":"img/gdban2.jpg",
+		"name":"扁食2"
+	}
+],
+	"zhongcan":[
+	{
+		"img":"img/gdban1.jpg",
+		"name":"粿条2"
+	},
+	{
+		"img":"img/gdban2.jpg",
+		"name":"拌面2"
+	},
+	{
+		"img":"img/gdban1.jpg",
+		"name":"扁食2"
+	}
+],
+	"xican":[
+	{
+		"img":"img/gdban2.jpg",
+		"name":"粿条2"
+	},
+	{
+		"img":"img/gdban1.jpg",
+		"name":"拌面2"
+	},
+	{
+		"img":"img/gdban2.jpg",
+		"name":"扁食2"
+	}
+],
+	"yexiao":[
+	{
+		"img":"img/gdban1.jpg",
+		"name":"粿条2"
+	},
+	{
+		"img":"img/gdban1.jpg",
+		"name":"拌面2"
+	},
+	{
+		"img":"img/gdban1.jpg",
+		"name":"扁食2"
+	}
+],
+	"quantian":[
+	{
+		"img":"img/gdban2.jpg",
+		"name":"粿条2"
+	},
+	{
+		"img":"img/gdban2.jpg",
+		"name":"拌面2"
+	},
+	{
+		"img":"img/gdban2.jpg",
+		"name":"扁食2"
+	}
+]
+	}
+
+

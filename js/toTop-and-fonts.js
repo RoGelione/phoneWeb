@@ -50,19 +50,24 @@
 							}
 	}
 	$(".last-arr").on("click",function(){
-			location.href=history.go(-1);
+			window.history.back(-1); 
 	})
 	/*ajax加载*/
-function ajaxGoto(url,dataname){
+function ajaxGoto(name){
+	var data = name;
 				$.ajax({
-					type:"post",
-					url:url,
-					data:{
-						dataname:dataname
-					},
+					type:"get",
+					url:'js/data.js',
 					dataType:JSON,
-					 success: function(){
-				   			window.location.href=''
+					 success: function(result){
+					 	var res = JSON.parse(result)
+					 	var jsimg = document.getElementsByClassName('jsimg')
+					 	var jsspan = document.getElementsByClassName('jsspan')
+//					 	console.log(res[data][0].img)
+					 	for (var i = 0; i<res[data].length;i++) {
+					 		jsimg[i].src = res[data][i].img
+					 		jsspan[i].innerHTML = res[data][i].name
+					 	}
 				  		},
 				  error: function(){
 				    alert('Ajax error!')
